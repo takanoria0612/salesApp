@@ -29,12 +29,10 @@ def send_email_with_form_data(form_data):
     email_body += csv_data
     
     email_list_str = os.getenv('EMAIL_LIST')
-    print(email_list_str)
     email_list = ast.literal_eval(email_list_str) if email_list_str else []
     recipients = email_list  
-    print(email_list, 'email_listです。')
     to_addresses = ", ".join(recipients)
-    print(to_addresses, "to_addressです。")
+
     # MIMETextオブジェクトを作成し、メールの本文、件名、送信元、宛先を設定
     msg = MIMEText(email_body, 'plain', 'utf-8')
     msg['Subject'] = f"{form_data['date']} 売上集計"

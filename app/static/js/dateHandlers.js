@@ -1,4 +1,5 @@
 import { setFormReadOnly, clearFormData, updateFinancials } from './formUtils.js';
+import { fetchHolidays } from './holidays.js';
 export async function fetchDataForDate(selectedDate) {
     try {
         const response = await fetch(`/fetch-data-for-date?date=${selectedDate}`);
@@ -7,7 +8,7 @@ export async function fetchDataForDate(selectedDate) {
         }
         const data = await response.json();
         if (data.exists) {
-            print(data, 'これはすくなめのやつ')
+
             console.log(data, 'yeahhh')
             // データが存在する場合、フォームのフィールドを更新
             document.getElementById('sets').value = data.sets || '';
@@ -31,7 +32,17 @@ export async function fetchDataForDate(selectedDate) {
     }
 }
 
+// グローバル変数として定義
+let holidays = {};
 
+// アプリケーションの初期化または適切なタイミングで祝日データをフェッチ
+async function initializeHolidays() {
+    try {
+        holidays = await fetchHolidays();
+    } catch (error) {
+        console.error('Failed to fetch holidays:', error);
+    }
+}
 
     // 日付変更時の処理を行う関数
 export async function handleDateChange(event) {
@@ -55,10 +66,9 @@ export async function handleDateChange(event) {
                 clearFormData();
                 alert('データがありません。');
             } else {
-                // データが存在する場合、フォームのフィールドを更新
-                document.getElementById('sets').value = data.sets || '';
-                document.getElementById('customers').value = data.customers || '';
-                // 他のフィールドも同様に更新...
+                // document.getElementById('sets').value = data.sets || '';
+                // document.getElementById('customers').value = data.customers || '';
+                await fetchDataForDate(selectedDate)
             }
         } catch (error) {
             console.error('Error:', error);
@@ -66,3 +76,5 @@ export async function handleDateChange(event) {
         }
     }
 }
+// 初期化関数を実行して祝日データをセット
+initializeHolidays();

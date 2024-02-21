@@ -11,82 +11,10 @@ from typing import Optional, Dict
 from app import login_manager
 import logging
 
-# ブループリントの作成
-bp = Blueprint('main', __name__)
-@bp.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        username = request.form.get('username')
-        password = request.form.get('password')
-        user = User.authenticate(username, password)
-        if user:
-            login_user(user)
-            return redirect(url_for('main.index'))  
-        else:
-            flash('ログインに失敗しました。')
-    return render_template('login.html')
 
-@bp.route('/logout')
-@login_required
-def logout():
-    logout_user()
-    return redirect(url_for('main.login'))  
-@bp.route('/')
-@login_required
-def index():
-    now = datetime.now()
-    current_year = now.year
-    current_month = now.month
+data_management_bp = Blueprint('data_management', __name__)
 
-    # データの初期化
-    data = []
-    total_price = 0.0
-    total_purchase = 0.0
-
-    # Excelファイルの存在をチェックし、結果を変数に格納
-    EXCEL_FILE_PATH = current_app.config['EXCEL_FILE_PATH']
-    file_exists = os.path.exists(EXCEL_FILE_PATH)
-
-    if file_exists:
-        try:
-            # Excelファイルを開く
-            workbook = openpyxl.load_workbook(EXCEL_FILE_PATH)
-            sheet = workbook.active
-
-            # Excelファイルからデータを読み込む
-            for row in sheet.iter_rows(min_row=2, values_only=True):
-                if isinstance(row[0], datetime):
-                    row_date = row[0].date()
-                else:
-                    row_date = datetime.strptime(str(row[0]), "%Y-%m-%d").date()
-
-                if row_date.year == current_year and row_date.month == current_month:
-                    # 合計値段と客数を取得
-                    total = float(row[8]) if row[8] else 0
-                    customers = int(row[2]) if row[2] else 0
-                    purchase = float(row[4]) if row[4] else 0
-                    # 客単価を計算
-                    avg_spend = total / customers if customers > 0 else 0
-                    # データリストに行と客単価を追加
-                    data.append(row + (avg_spend,))
-                    total_price += total
-                    total_purchase += purchase
-            total_price = int(total_price)
-            total_purchase = int(total_purchase)
-
-        except Exception as e:
-            logging.error(f"Excelファイルの読み込み中にエラーが発生しました: {e}")
-            flash('Excelファイルの読み込み中にエラーが発生しました。', 'error')
-            file_exists = False  # ここでfile_existsを更新してはいけません
-    else:
-        error_message = "Excelファイルが見つかりません"
-        logging.error(error_message)
-        flash(error_message, "error_index")
-
-    # file_exists の状態に関わらず、テンプレートに必要な変数を渡す
-    return render_template('index.html', file_exists=file_exists, data=data, total_price=total_price, total_purchase=total_purchase)
-
-@bp.route('/add', methods=['GET', 'POST'])
+@data_management_bp.route('/add', methods=['GET', 'POST'])
 @login_required
 def add():
     EXCEL_FILE_PATH = current_app.config['EXCEL_FILE_PATH']
@@ -126,13 +54,6 @@ def add():
         # form_dataから日付文字列を取得し、datetimeオブジェクトに変換後、dateオブジェクトに変換
         date_str = form_data['date']
         date_obj = datetime.strptime(date_str, '%Y-%m-%d').date()  # 日付のみを含むdateオブジェクト
-
-
-
-        # 新たに客単価を計算
-        customers = int(form_data.get('customers', 1))  # 0除算を避けるためデフォルトを1に
-        total_price = float(form_data.get('total_price', 0))
-        per_customer_price = total_price / customers if customers > 0 else 0
 
         # Excelファイル内のデータをチェックし、更新する行を探す
         try:
@@ -182,7 +103,7 @@ def add():
             email_sent = send_email_with_form_data(form_data)
             if email_sent:
                 flash('メールを送信しました。','success')
-                return redirect(url_for('main.add'))  # メール送信後に適切なページにリダイレクト
+                return redirect(url_for('data_management.add'))  # メール送信後に適切なページにリダイレクト
             else:
                 flash('メールの送信に失敗しました。', 'error')
 
@@ -197,44 +118,18 @@ def add():
     # add.htmlを表示
     return render_template('add.html', form_data=form_data)
 
-
-@bp.route('/set-business-day', methods=['POST'])
-def set_business_day():
-    EXCEL_FILE_PATH = current_app.config['EXCEL_FILE_PATH']
-    try:
-        data = request.get_json()
-        business_day = data.get('businessDay')
-        print(business_day)
-        if not business_day:
-            logging.error("Business day not provided in the request.")
-            return jsonify({'status': 'error', 'message': 'Business day is required.'}), 400
-
-        # Excelファイルを検索するロジック
-        excel_data = find_data_by_date(EXCEL_FILE_PATH, business_day)
-        if excel_data and excel_data['exists']:
-            logging.info(f" {business_day} のデータは既に存在します")
-            return jsonify({'status': 'success', 'data': excel_data})
-        else:
-            logging.info(f"{business_day}のデータは存在しません。追加してください")
-            return jsonify({'status': 'not found', 'message': "前営業日のデータはありません。新しいデータを追加してください"})
-
-    except Exception as e:
-        logging.error(f"Error while setting business day: {e}", exc_info=True)
-        return jsonify({'status': 'error', 'message': 'An error occurred while processing your request.'}), 500
-
-@bp.route('/fetch-data-for-date')
+@data_management_bp.route('/fetch-data-for-date')
 @login_required
 def fetch_data_for_date():
     EXCEL_FILE_PATH = current_app.config['EXCEL_FILE_PATH']
     selected_date = request.args.get('date')
     data = find_data_by_date(EXCEL_FILE_PATH, selected_date)
-    print(data)
     if data:
         return jsonify(data)
     else:
         return jsonify({'exists': False})
-
-@bp.route('/filter', methods=['GET'])
+    
+@data_management_bp.route('/filter', methods=['GET'])
 @login_required
 def filter_data():
     selected_month = request.args.get('selectedMonth', '')  # デフォルト値を空文字列に設定

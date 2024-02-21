@@ -32,3 +32,16 @@ export function updateFinancials() {
     var total = cashTotal + cardTotal + usdTotal;
     document.getElementById('total_price').value = total;
 }
+
+export function updateFormData(data) {
+    // サーバーから取得したデータをフォームに設定するロジック
+    document.getElementById('sets').value = data.sets || '';
+    document.getElementById('customers').value = data.customers || '';
+    document.getElementById('bowls').value = data.bowls || '';
+    document.getElementById('purchase_total').value = data.purchase_total || '';
+    document.getElementById('total_price').value = data.total_price || '';
+    document.getElementById('cash_total').value = data.cash_total || '';
+    document.getElementById('card_total').value = data.card_total || '';
+    document.getElementById('usd_total').value = data.usd_total || '';
+    document.getElementById('remarks').value = data.remarks || '';
+}
