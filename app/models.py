@@ -1,3 +1,5 @@
+import logging
+from flask import flash
 from flask_login import UserMixin, LoginManager
 from app.utils.user_utils import load_user_from_env
 
@@ -9,23 +11,35 @@ class User(UserMixin):
         self.username = username
         self.password = password
 
+
     @staticmethod
     def authenticate(username, password):
-        user = users.get(username)
-        if user and user.password == password:
-            return user
+        logging.basicConfig(level=logging.DEBUG)
+        user_database = load_user_from_env()
+        print(username, password, 'def authenticate')
+        logging.debug(f"Loaded user database: {user_database}")
+        for user_id, user_data in user_database.items():
+            if user_data['username'] == username:
+                if user_data['password'] == password:
+                    logging.debug(f"Authenticated user: {username}")
+                    return User(user_data['id'], username, password)
+                else:
+                    flash("パスワードが正しくありません", 'error')
+                    logging.debug(f"Password mismatch for user: {username}")
+                    return None
+
+        flash("ユーザーが見つかりません", 'error')
+        logging.debug(f"User not found: {username}")
         return None
+
 
     @staticmethod
     def get(user_id):
-        for user in users.values():
-            if user.id == user_id:
-                return user
+        user_database = load_user_from_env()
+        for user_info in user_database.values():
+            if user_info['id'] == user_id:
+                return User(user_info['id'], user_info['username'], user_info['password'])
         return None
-
-# 環境変数からユーザーデータベースをロードし、User インスタンスを作成
-user_data = load_user_from_env()
-users = {username: User(user_info["id"], user_info["username"], user_info["password"]) for username, user_info in user_data.items()}
 
 @login_manager.user_loader
 def load_user(user_id):
