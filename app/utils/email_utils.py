@@ -27,10 +27,9 @@ def send_email_with_form_data(form_data):
     ]])
 
     email_body += csv_data
-    
     email_list_str = os.getenv('EMAIL_LIST')
     email_list = ast.literal_eval(email_list_str) if email_list_str else []
-    recipients = email_list  
+    recipients = email_list
     to_addresses = ", ".join(recipients)
 
     # MIMETextオブジェクトを作成し、メールの本文、件名、送信元、宛先を設定

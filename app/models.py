@@ -24,11 +24,11 @@ class User(UserMixin):
                     logging.debug(f"Authenticated user: {username}")
                     return User(user_data['id'], username, password)
                 else:
-                    flash("パスワードが正しくありません", 'error')
+                    flash("ログインに失敗しました", 'error')
                     logging.debug(f"Password mismatch for user: {username}")
                     return None
 
-        flash("ユーザーが見つかりません", 'error')
+        flash("ログインに失敗しました", 'error')
         logging.debug(f"User not found: {username}")
         return None
 

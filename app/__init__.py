@@ -20,13 +20,11 @@ def create_app():
 
     # ブループリントのインポート
     from app.main import bp
-    from app.users import user_bp
     from app.routes import auth_bp
     from app.routes import data_management_bp
     from app.routes import business_day_bp
     # ブループリントの登録
     app.register_blueprint(bp, url_prefix='/')
-    app.register_blueprint(user_bp, url_prefix="/user")
     app.register_blueprint(auth_bp, url_prefix='/auth')
     app.register_blueprint(data_management_bp)
     app.register_blueprint(business_day_bp)

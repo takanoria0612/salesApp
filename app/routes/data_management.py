@@ -77,7 +77,7 @@ def add():
                 update_row[7].value = float(form_data.get('usd_total', 0))
                 update_row[8].value = float(form_data.get('total_price', 0))
                 update_row[9].value = form_data.get('remarks', '')
-                # update_row[10].value = float(per_customer_price) 
+                # update_row[10].value = float(per_customer_price)
                 # update_row[10].value = float(form_data.get('per_customer_price', 3)) # 客単価を新たな列に設定
                 flash('データを更新しました。', 'success')
             else:  # 新しいデータを追加
@@ -112,8 +112,6 @@ def add():
             flash(str(e), 'error')
             # ここでエラーメッセージとともにフォームページに値を渡してレンダリング
             return render_template('add.html', form_data=form_data)
-        
-        
 
     # add.htmlを表示
     return render_template('add.html', form_data=form_data)
@@ -128,7 +126,7 @@ def fetch_data_for_date():
         return jsonify(data)
     else:
         return jsonify({'exists': False})
-    
+
 @data_management_bp.route('/filter', methods=['GET'])
 @login_required
 def filter_data():

@@ -1,5 +1,23 @@
+// app/rotues/dateHandlers.js
 import { setFormReadOnly, clearFormData, updateFinancials } from './formUtils.js';
 import { fetchHolidays } from './holidays.js';
+
+
+
+export async function showBootstrapAlert(type, message) {
+    const alertPlaceholder = document.getElementById('alert-placeholder');
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible fade show" role="alert">`,
+        `   <strong>${message}</strong>`,
+        '   <button type="button" class="close" data-dismiss="alert" aria-label="Close">',
+        '       <span aria-hidden="true">&times;</span>',
+        '   </button>',
+        '</div>'
+    ].join('');
+
+    alertPlaceholder.appendChild(wrapper);
+}
 export async function fetchDataForDate(selectedDate) {
     try {
         const response = await fetch(`/fetch-data-for-date?date=${selectedDate}`);
@@ -22,13 +40,14 @@ export async function fetchDataForDate(selectedDate) {
             document.getElementById('remarks').value = data.remarks || '';
             // 他の必要なフィールドも同様に更新
         } else {
-            // データが存在しない場合の処理（例：フォームをクリア）
+            // データが存在しない場合の処理
             clearFormData();
-            alert('データがありません。');
+            showBootstrapAlert('warning', 'データがありませんよ');
+
         }
     } catch (error) {
         console.error('Error:', error);
-        alert('データの取得に失敗しました。');
+        showBootstrapAlert('データの取得に失敗しました。');
     }
 }
 
@@ -45,17 +64,18 @@ async function initializeHolidays() {
 }
 
     // 日付変更時の処理を行う関数
+    //　ここでadd.htmlに遷移したとき、データがなければポップアップはく。
 export async function handleDateChange(event) {
     const selectedDate = event.target.value;
     const date = new Date(selectedDate);
     const dayOfWeek = date.getDay();
 
     if (dayOfWeek === 0 || dayOfWeek === 6) {
-        alert('土、日は営業日ではありません。');
+        showBootstrapAlert('warning', '土、日は営業日ではありません。');
         clearFormData();
         setFormReadOnly(true);
     } else if (holidays[selectedDate]) {
-        alert('祝日なのでデータの追加ができません');
+        showBootstrapAlert('warning', '祝日なのでデータの追加ができません');
         clearFormData();
         setFormReadOnly(true);
     } else {
@@ -64,7 +84,7 @@ export async function handleDateChange(event) {
             const data = await fetch(`/fetch-data-for-date?date=${selectedDate}`).then(response => response.json());
             if (!data.exists) {
                 clearFormData();
-                alert('データがありません。');
+                showBootstrapAlert('warning', 'データがありません。');
             } else {
                 // document.getElementById('sets').value = data.sets || '';
                 // document.getElementById('customers').value = data.customers || '';
@@ -72,9 +92,10 @@ export async function handleDateChange(event) {
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('データの取得に失敗しました。');
+            showBootstrapAlert('error', 'データの取得に失敗しました。');
         }
     }
 }
 // 初期化関数を実行して祝日データをセット
 initializeHolidays();
+
