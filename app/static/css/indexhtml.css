@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    height: 100%;
 }
 
 .background-overlay {
@@ -11,7 +12,6 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* スマホ表示時の余白調整 */
 }
 
 .page-container {
@@ -19,104 +19,146 @@ body, html {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    max-width: 100%;
-    overflow-x: auto; /* テーブルが幅を超える時スクロール可能に */
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
-/* table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+/* ラベルとフォーム要素のスタイル */
+label {
+    margin-right: 10px; /* ラベルとフォームの間隔 */
 }
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #ddd;
-}
-
-th {
-    background-color: #007bff;
-    color: white;
-} */
-/* Modern styling for the totals display */
+/* Modern styling for the totals display (変更なし) */
 .totals-display {
-    background-color: whitesmoke; /* Primary color background */
-    color: black; /* White text for contrast */
+    background-color: whitesmoke;
+    color: black;
     padding: 10px;
     border-radius: 5px;
-    margin: 10px 0; /* Add some margin for spacing */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: flex;
-    justify-content: space-between; /* Space out the label and value */
+    justify-content: space-between;
     align-items: center;
 }
 
 .totals-display p {
-    margin: 0; /* Remove default paragraph margin */
-    font-weight: bold; /* Make the text bold */
+    margin: 0;
+    font-weight: bold;
 }
+.form-group form {
+    display: flex;
+    flex-direction: row; /* 横に並べる */
+    align-items: center; /* 要素を中央寄せに */
+    gap: 10px; /* 要素間の隙間 */
+    flex-wrap: wrap;
+}
+/* ラベルとフォーム要素のスタイル */
+.form-group label {
+    white-space: nowrap; /* ラベル内のテキストが折り返されないようにする */
+}
+
+
+input[type="text"], input[type="password"], input[type="month"] {
+    flex-grow: 1; /* 利用可能なスペースを埋める */
+    margin: 0 10px; /* 両サイドのマージン */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px; /* ボタン間に適切な隙間を設ける */
+    margin-top: 20px; /* 上部の要素との間隔 */
+}
+
 .btn {
+    width: auto;
+    padding: 13px 17px; /* パディングを少し小さく調整 */
+    margin: 8px 0; /* 上下のマージンを減らす */
+    white-space: nowrap; /* ボタンのテキストが折り返されないようにする */
+    overflow: hidden; /* テキストがボタンから溢れないようにする */
+    text-overflow: ellipsis; /* 長いテキストを省略符号で表現する */
     display: inline-block;
     background-color: #007bff;
     color: white;
-    padding: 8px 15px;
-    margin: 5px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+    font-size: 17px;
 }
-
+.button-row > .btn {
+    margin: 5px 10px; /* ボタン間の余白を調整 */
+}
+.btn-group {
+    display: flex;
+    flex-direction: row; /* ボタンを横に並べる */
+    justify-content: center; /* 中央揃え */
+    gap: 7px; /* ボタン間に10pxの隙間を設ける */
+    flex-wrap: wrap; /* 必要に応じて折り返しを許可 */
+}
 .btn:hover {
-    background-color: #007bff;
+    background-color: #0056b3;
 }
 
-/* レスポンシブデザイン */
+/* レスポンシブデザインの調整 */
 @media (max-width: 768px) {
+    .page-container {
+        width: 97%; 
+        max-width: 94%; /* タブレット表示時の幅調整 */
+    }
+
     body {
-        font-size: 14px;
+        font-size: 20px;
     }
-    .totals-display {
-        flex-direction: column; /* Stack label and value on smaller screens */
-        align-items: flex-start; /* Align to the start */
-    }
+
+
 
     .totals-display p {
-        margin-bottom: 5px; /* Add margin to the bottom of the label */
+        margin-bottom: 3px;
     }
 
+    .button-row {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .button-row > .btn {
+        width: auto; /* ボタンの幅を内容に合わせる */
+        margin: 5px 10px; /* ボタン間の余白を調整 */
+    }
     .btn {
-        padding: 8px 16px;
-        font-size: 14px;
+        padding: 4px 7px;
+        font-size: 17px;
     }
-
-
 }
 
 @media (max-width: 480px) {
     .btn {
-        padding: 6px 12px;
-        font-size: 12px; /* 更に小さなデバイスでのボタンのサイズ調整 */
+        padding: 13px 17px;
+        font-size: 17px;
     }
 
-    /* フォーム要素のスタイル調整 */
-    input[type="month"] {
-        font-size: 14px;
-        padding: 4px;
-        margin: 5px 0; /* スマホでの入力しやすさ向上 */
+
+    .btn-group > .btn {
+        margin: 10px 0; /* ボタン間のマージン */
+    }
+    .page-container {
+        width: 90%;
+    }
+
+    .form-group, .btn-group {
+
+        align-items: stretch; /* 子要素を幅いっぱいに伸ばす */
+    }
+
+    .form-group > *, .btn-group > .btn {
+        margin: 10px 0; /* 縦に並べる時のマージン */
     }
 }
 

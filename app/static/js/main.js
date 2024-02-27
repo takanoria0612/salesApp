@@ -6,5 +6,5 @@ console.log('mainです。')
 // 必要に応じて、他のモジュールや追加の設定をここに記述します。
 window.onload = async function() {
     await initPage();
-    setupEventListeners();
+    await setupEventListeners();
 };

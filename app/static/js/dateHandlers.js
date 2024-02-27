@@ -6,6 +6,8 @@ import { fetchHolidays } from './holidays.js';
 
 export async function showBootstrapAlert(type, message) {
     const alertPlaceholder = document.getElementById('alert-placeholder');
+    alertPlaceholder.innerHTML = '';
+
     const wrapper = document.createElement('div');
     wrapper.innerHTML = [
         `<div class="alert alert-${type} alert-dismissible fade show" role="alert">`,
@@ -98,4 +100,3 @@ export async function handleDateChange(event) {
 }
 // 初期化関数を実行して祝日データをセット
 initializeHolidays();
-

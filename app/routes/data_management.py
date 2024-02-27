@@ -103,10 +103,11 @@ def add():
             email_sent = send_email_with_form_data(form_data)
             if email_sent:
                 flash('メールを送信しました。','success')
+                # return jsonify({'status': 'success', 'message': 'データを更新しました。'})
                 return redirect(url_for('data_management.add'))  # メール送信後に適切なページにリダイレクト
             else:
                 flash('メールの送信に失敗しました。', 'error')
-
+            
         except ValueError as e:
             # ここでエラーメッセージとともにフォームページにリダイレクト
             flash(str(e), 'error')
@@ -172,5 +173,3 @@ def filter_data():
     total_price = sum(row[8] for row in filtered_data if row[8])
 
     return render_template('index.html', file_exists=True, data=filtered_data, total_price=total_price, total_purchase=total_purchase, selected_month=selected_month)
-
-

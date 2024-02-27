@@ -27,7 +27,7 @@ export async function initPage() {
         } else {
             showBootstrapAlert('warning', 'データがありませ!ん。');;
             if (data.message) {
-            showBootstrapAlert('warning', 'データがありませ!ん。');
+                showBootstrapAlert(data.message);
 
             }
         }

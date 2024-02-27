@@ -2,7 +2,6 @@
 import { setFormReadOnly, updateFormData, updateFinancials } from './formUtils.js';
 import { fetchHolidays } from './holidays.js';
 import { handleDateChange } from './dateHandlers.js';
-
 export default async function setupEventListeners() {
     // 祝日データをフェッチして、グローバル変数または状態管理に保存
     let holidays = {};
@@ -22,11 +21,12 @@ export default async function setupEventListeners() {
 
 
     // フォーム送信時のイベントリスナー
-    document.querySelector('form').addEventListener('submit', async (e) => {
-        // e.preventDefault(); // デフォルトのフォーム送信を防止
+    document.querySelector('form').addEventListener('submit', async function (e) {
+        e.preventDefault(); // デフォルトのフォーム送信を防止
         await updateFinancials(); // 財務データの最終更新
         // ここで、フォームデータの送信やその他の送信前処理を行う
 
+        e.target.submit()
     });
 }
 // ページロード時にイベントリスナーをセットアップ
