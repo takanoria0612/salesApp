@@ -68,6 +68,11 @@ async function initializeHolidays() {
     // 日付変更時の処理を行う関数
     //　ここでadd.htmlに遷移したとき、データがなければポップアップはく。
 export async function handleDateChange(event) {
+    // アラート領域をクリア
+    const alertPlaceholder = document.getElementById('alert-placeholder');
+    if (alertPlaceholder) {
+        alertPlaceholder.innerHTML = '';
+    }
     const selectedDate = event.target.value;
     const date = new Date(selectedDate);
     const dayOfWeek = date.getDay();
