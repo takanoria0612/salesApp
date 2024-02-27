@@ -6,7 +6,7 @@ import os
 from datetime import datetime
 import logging
 
-from app.utils.excel_utils import open_excel_file
+from app.utils.excel_utils import open_excel_file, read_excel_data
 
 # ブループリントの作成
 bp = Blueprint('main', __name__)
@@ -30,28 +30,11 @@ def index():
     if file_exists:
         try:
             # Excelファイルを開く
-            # workbook = openpyxl.load_workbook(EXCEL_FILE_PATH)
             workbook = open_excel_file(EXCEL_FILE_PATH)
-            sheet = workbook.active
-
-            # Excelファイルからデータを読み込む
-            for row in sheet.iter_rows(min_row=2, values_only=True):
-                if isinstance(row[0], datetime):
-                    row_date = row[0].date()
-                else:
-                    row_date = datetime.strptime(str(row[0]), "%Y-%m-%d").date()
-
-                if row_date.year == current_year and row_date.month == current_month:
-                    # 合計値段と客数を取得
-                    total = float(row[8]) if row[8] else 0
-                    customers = int(row[2]) if row[2] else 0
-                    purchase = float(row[4]) if row[4] else 0
-                    # 客単価を計算
-                    avg_spend = total / customers if customers > 0 else 0
-                    # データリストに行と客単価を追加
-                    data.append(row + (avg_spend,))
-                    total_price += total
-                    total_purchase += purchase
+                        
+            # read_excel_data 関数を使用してデータを読み込む
+            data, total_price, total_purchase = read_excel_data(workbook, current_year, current_month)
+            
             total_price = int(total_price)
             total_purchase = int(total_purchase)
 
@@ -63,6 +46,7 @@ def index():
         error_message = "Excelファイルが見つかりません"
         logging.error(error_message)
         flash(error_message, "error_index")
+        data, total_price, total_purchase = [], 0, 0  # デフォルト値を設定
 
     # file_exists の状態に関わらず、テンプレートに必要な変数を渡す
     return render_template('index.html', file_exists=file_exists, data=data, total_price=total_price, total_purchase=total_purchase)

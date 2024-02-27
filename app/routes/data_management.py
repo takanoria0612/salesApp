@@ -3,13 +3,10 @@ from flask_login import login_user, logout_user, login_required, current_user
 import openpyxl
 import os
 from datetime import datetime, timedelta
-from app.utils.excel_utils import find_data_by_date, save_data
+from app.utils.excel_utils import find_data_by_date, open_excel_file, save_data
 from app.utils.email_utils import send_email_with_form_data
 from app.utils.user_utils import load_user_from_env
-from app.models import User
-from typing import Optional, Dict
-from app import login_manager
-import logging
+
 
 
 data_management_bp = Blueprint('data_management', __name__)
@@ -18,12 +15,9 @@ data_management_bp = Blueprint('data_management', __name__)
 @login_required
 def add():
     EXCEL_FILE_PATH = current_app.config['EXCEL_FILE_PATH']
-    workbook = openpyxl.load_workbook(EXCEL_FILE_PATH)
+    workbook = open_excel_file(EXCEL_FILE_PATH)
     sheet = workbook.active
-    rows = list(sheet.iter_rows(min_row=2, values_only=True))
 
-    # 初期値として昨日の日付を設定
-    default_date = (datetime.now() - timedelta(days=1)).date()
 
     # 初期フォームデータの設定
     form_data = {
@@ -77,8 +71,7 @@ def add():
                 update_row[7].value = float(form_data.get('usd_total', 0))
                 update_row[8].value = float(form_data.get('total_price', 0))
                 update_row[9].value = form_data.get('remarks', '')
-                # update_row[10].value = float(per_customer_price)
-                # update_row[10].value = float(form_data.get('per_customer_price', 3)) # 客単価を新たな列に設定
+
                 flash('データを更新しました。', 'success')
             else:  # 新しいデータを追加
                 sheet.append([
@@ -137,7 +130,7 @@ def filter_data():
 
     if not file_exists:
         flash("Excelファイルが見つかりません。", "error")
-        return redirect(url_for('index'))
+        return redirect(url_for('main.index'))
 
     year, month = map(int, selected_month.split('-'))
 
@@ -146,7 +139,7 @@ def filter_data():
         sheet = workbook.active
     except Exception as e:
         flash("Excelファイルを開く際にエラーが発生しました。", "error")
-        return redirect(url_for('index'))
+        return redirect(url_for('main.index'))
 
     filtered_data = []
     total_purchase = 0.0
