@@ -36,3 +36,8 @@ def save_data(excel_file_path, data):
         workbook.save(excel_file_path)
     except Exception as e:
         print(f"Error while saving data to Excel file: {e}")
+
+
+def open_excel_file(excel_file_path: str) -> openpyxl.workbook.workbook.Workbook:
+    """Excelファイルを開く"""
+    return openpyxl.load_workbook(excel_file_path)

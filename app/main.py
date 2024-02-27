@@ -6,6 +6,8 @@ import os
 from datetime import datetime
 import logging
 
+from app.utils.excel_utils import open_excel_file
+
 # ブループリントの作成
 bp = Blueprint('main', __name__)
 
@@ -28,7 +30,8 @@ def index():
     if file_exists:
         try:
             # Excelファイルを開く
-            workbook = openpyxl.load_workbook(EXCEL_FILE_PATH)
+            # workbook = openpyxl.load_workbook(EXCEL_FILE_PATH)
+            workbook = open_excel_file(EXCEL_FILE_PATH)
             sheet = workbook.active
 
             # Excelファイルからデータを読み込む

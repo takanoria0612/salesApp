@@ -6,10 +6,6 @@ from flask import current_app
 import ast
 def send_email_with_form_data(form_data):
     """フォームデータをCSV形式でメールで送信する関数"""
-
-    # 環境変数のロード
-    load_dotenv()
-
     # SMTP設定を環境変数から取得
     smtp_server = os.getenv('SMTP_SERVER')
     smtp_port = int(os.getenv('SMTP_PORT'))

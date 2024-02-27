@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_login import LoginManager
 from config import Config
+from dotenv import load_dotenv
 from app.models import User
 
 # Flask-Loginの設定
@@ -13,6 +14,8 @@ def load_user(user_id):
     return User.get(user_id)
 
 def create_app():
+    
+    load_dotenv()
     app = Flask(__name__)
     app.config.from_object(Config)
     # Flask-Loginの初期化

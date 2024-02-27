@@ -23,9 +23,8 @@ export default async function setupEventListeners() {
     // フォーム送信時のイベントリスナー
     document.querySelector('form').addEventListener('submit', async function (e) {
         e.preventDefault(); // デフォルトのフォーム送信を防止
-        await updateFinancials(); // 財務データの最終更新
+        await updateFinancials(); // お金関連データの最終更新
         // ここで、フォームデータの送信やその他の送信前処理を行う
-
         e.target.submit()
     });
 }
