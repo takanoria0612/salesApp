@@ -25,11 +25,11 @@ export async function initPage() {
         if (data.status === 'success') {
             updateFormData(data.data); // フォームの値を更新する関数
         } else {
-            showBootstrapAlert('warning', 'データがありませ!ん。');;
-            if (data.message) {
-                showBootstrapAlert(data.message);
+            showBootstrapAlert('warning', 'データがありません。');;
+            // if (data.message) {
+            //     showBootstrapAlert('warning', 'データがありませ!ん。');
 
-            }
+            // }
         }
     } catch (error) {
         console.error('Error fetching or processing holidays:', error);

@@ -7,7 +7,7 @@ import { fetchHolidays } from './holidays.js';
 export async function showBootstrapAlert(type, message) {
     const alertPlaceholder = document.getElementById('alert-placeholder');
     alertPlaceholder.innerHTML = '';
-
+    
     const wrapper = document.createElement('div');
     wrapper.innerHTML = [
         `<div class="alert alert-${type} alert-dismissible fade show" role="alert">`,
@@ -42,14 +42,17 @@ export async function fetchDataForDate(selectedDate) {
             document.getElementById('remarks').value = data.remarks || '';
             // 他の必要なフィールドも同様に更新
         } else {
+
+
             // データが存在しない場合の処理
             clearFormData();
+            console.log('hello, there si no data')
             showBootstrapAlert('warning', 'データがありませんよ');
 
         }
     } catch (error) {
         console.error('Error:', error);
-        showBootstrapAlert('データの取得に失敗しました。');
+        showBootstrapAlert('error', 'データの取得に失敗しました。');
     }
 }
 
@@ -72,6 +75,8 @@ export async function handleDateChange(event) {
     const alertPlaceholder = document.getElementById('alert-placeholder');
     if (alertPlaceholder) {
         alertPlaceholder.innerHTML = '';
+    } else {
+        print('ここだーーーーーーーーーーーーーーーーーーーー')
     }
     const selectedDate = event.target.value;
     const date = new Date(selectedDate);
@@ -96,6 +101,7 @@ export async function handleDateChange(event) {
                 // document.getElementById('sets').value = data.sets || '';
                 // document.getElementById('customers').value = data.customers || '';
                 await fetchDataForDate(selectedDate)
+                console.log('hahaha, int h else')
             }
         } catch (error) {
             console.error('Error:', error);

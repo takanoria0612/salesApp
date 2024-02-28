@@ -21,7 +21,6 @@ def add():
 
     # 初期フォームデータの設定
     form_data = {
-        # 'date': default_date.strftime('%Y-%m-%d'),  # 昨日の日付をデフォルト値として設定
         'sets': '',
         'customers': '',
         'bowls': '',
@@ -31,21 +30,17 @@ def add():
         'card_total': '',
         'usd_total': '',
         'remarks': '',
-        # 'per_customer_price': ''
     }
     if request.method == 'GET':
-        business_day = request.args.get('businessDay')  # フロントエンドから送信されたbusinessDayを取得
-        # 新たに客単価を計算
-        # 'customers' フィールドの検証と変換
         customers_str = form_data.get('customers', '').strip()
         customers = int(customers_str) if customers_str.isdigit() else 1  # 数字のみの場合に変換、それ以外はデフォルト値1
         total_price_str = form_data.get('total_price', '').strip()
         total_price = float(total_price_str) if total_price_str.replace('.', '', 1).isdigit() else 0
 
-        per_customer_price = total_price / customers if customers > 0 else 0
+
     elif request.method == 'POST':
         form_data = request.form.to_dict(flat=True)  # Use flat=True to get a regular dict
-        # form_dataから日付文字列を取得し、datetimeオブジェクトに変換後、dateオブジェクトに変換
+        
         date_str = form_data['date']
         date_obj = datetime.strptime(date_str, '%Y-%m-%d').date()  # 日付のみを含むdateオブジェクト
 
