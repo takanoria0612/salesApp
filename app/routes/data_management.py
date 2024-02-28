@@ -1,11 +1,11 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for, jsonify, current_app
-from flask_login import login_user, logout_user, login_required, current_user
+from flask_login import login_required
 import openpyxl
 import os
 from datetime import datetime, timedelta
+from app.models import ExcelDataRow
 from app.utils.excel_utils import find_data_by_date, open_excel_file, save_data
 from app.utils.email_utils import send_email_with_form_data
-from app.utils.user_utils import load_user_from_env
 
 
 
@@ -40,50 +40,33 @@ def add():
 
     elif request.method == 'POST':
         form_data = request.form.to_dict(flat=True)  # Use flat=True to get a regular dict
-        
-        date_str = form_data['date']
-        date_obj = datetime.strptime(date_str, '%Y-%m-%d').date()  # 日付のみを含むdateオブジェクト
+        try:
+            row_data = ExcelDataRow.from_dict(form_data)
+        except ValueError as e:
+            flash(f'入力エラー: {e}', 'error')
+            return render_template('add.html', form_data=form_data)
 
         # Excelファイル内のデータをチェックし、更新する行を探す
         try:
+
             update_row = None
             for row in sheet.iter_rows(min_row=2, values_only=False):
                 row_date = row[0].value
                 if isinstance(row_date, datetime):
                     row_date = row_date.date()
-                if row_date == date_obj:
+                if row_date == row_data.date:
                     update_row = row
                     break
 
             if update_row:  # 既存のデータを更新
                 # 各セルに新しい値を設定
-                update_row[1].value = int(form_data.get('sets', 0))
-                update_row[2].value = int(form_data.get('customers', 0))
-                update_row[3].value = int(form_data.get('bowls', 0))
-                update_row[4].value = float(form_data.get('purchase_total', 0))
-                update_row[5].value = float(form_data.get('cash_total', 0))
-                update_row[6].value = float(form_data.get('card_total', 0))
-                update_row[7].value = float(form_data.get('usd_total', 0))
-                update_row[8].value = float(form_data.get('total_price', 0))
-                update_row[9].value = form_data.get('remarks', '')
-
+                for i, value in enumerate(row_data.to_excel_row()[1:], start=1):  # 日付を除いて更新
+                    update_row[i].value = value
                 flash('データを更新しました。', 'success')
             else:  # 新しいデータを追加
-                sheet.append([
-                    date_obj,
-                    int(form_data.get('sets', 0)),
-                    int(form_data.get('customers', 0)),
-                    int(form_data.get('bowls', 0)),
-                    float(form_data.get('purchase_total', 0)),
-                    float(form_data.get('total_price', 0)),
-                    float(form_data.get('cash_total', 0)),
-                    float(form_data.get('card_total', 0)),
-                    float(form_data.get('usd_total', 0)),
-                    form_data.get('remarks', ''),
-                    # float(per_customer_price)  # 客単価を追加
-                    # float(form_data.get('per_customer_price', 2))
-                ])
+                sheet.append(row_data.to_excel_row())
                 flash('新しいデータを追加しました。', 'success')
+
 
             workbook.save(EXCEL_FILE_PATH)
 
