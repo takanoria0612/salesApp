@@ -10,7 +10,7 @@
 <body>
     <div class="background-overlay">
         <div class="page-container"> 
-            <h1>七曲署売上集計アプリ</h1> <a class="btn" href="/logout">ログアウト</a>
+            <h1>七曲署売上集計アプリ</h1> <a class="btn" href="auth/logout">ログアウト</a>
 
             <!-- Flash Messages -->
             {% with messages = get_flashed_messages(with_categories=true) %}
@@ -28,22 +28,32 @@
                 <div>
                     <p>今月の合計値段: <span>{{ total_price }}</span></p>
                     <p>今月の仕入れ額: <span>{{ total_purchase }}</span></p>
+                    <p>今月の売り上げ平均: <span>{{ sales_average }}</span></p>
                 </div>
+
             </div>
+            
 
             <!-- History Form -->
-            <form action="/filter" method="get">
-                <label for="selectedMonth">月を選択する:</label>
-                <input type="month" id="selectedMonth" name="selectedMonth" {% if selected_month %}value="{{ selected_month }}" {% endif %}required>
-                <button type="submit" class="btn" {% if not file_exists %}disabled{% endif %}>参照</button>
-            </form>
+            <div class="form-group">
+                <form action="/filter" method="get" style="display: flex; align-items: center; justify-content: center;">
+                    <label for="selectedMonth">月を選択する:</label>
+                    <input type="month" id="selectedMonth" name="selectedMonth" required style="flex: 1;">
+                    <button type="submit" class="btn">参照</button>
+                </form>
+            </div>
+            
 
-            {% if file_exists %}
-                <a class="btn" href="/add">売り上げ登録</a>
-            {% else %}
-                <button class="btn" disabled>売り上げ登録 (利用不可)</button>
-            {% endif %}
-            <a class='btn return-btn' href="/">今月の売り上げ</a>
+            <!-- Buttons Row -->
+            <div class="button-row" style="display: flex; justify-content: center; gap: 10px;">
+                {% if file_exists %}
+                    <a class="btn" href="/add" style="flex-grow: 1;">売り上げ登録</a>
+                {% else %}
+                    <button class="btn" disabled style="flex-grow: 1;">売り上げ登録 (利用不可)</button>
+                {% endif %}
+                <a class='btn return-btn' href="/" style="flex-grow: 1;">今月の売り上げ</a>
+            </div>
+
         </div>
     </div>
 </body>

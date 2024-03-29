@@ -6,7 +6,20 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
 <body>
+
+
+
     <form action="" method="post">
+            <!-- Flash メッセージを表示する部分 -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                <div class="flash-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% endwith %}
         ユーザー名 : <input type="text" name="username"><br>
         パスワード : <input type="password" name="password"><br>
         <input type="submit" value="ログイン">

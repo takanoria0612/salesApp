@@ -1,4 +1,25 @@
+// app/rotues/dateHandlers.js
 import { setFormReadOnly, clearFormData, updateFinancials } from './formUtils.js';
+import { fetchHolidays } from './holidays.js';
+
+
+
+export async function showBootstrapAlert(type, message) {
+    const alertPlaceholder = document.getElementById('alert-placeholder');
+    alertPlaceholder.innerHTML = '';
+    
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible fade show" role="alert">`,
+        `   <strong>${message}</strong>`,
+        '   <button type="button" class="close" data-dismiss="alert" aria-label="Close">',
+        '       <span aria-hidden="true">&times;</span>',
+        '   </button>',
+        '</div>'
+    ].join('');
+
+    alertPlaceholder.appendChild(wrapper);
+}
 export async function fetchDataForDate(selectedDate) {
     try {
         const response = await fetch(`/fetch-data-for-date?date=${selectedDate}`);
@@ -7,8 +28,6 @@ export async function fetchDataForDate(selectedDate) {
         }
         const data = await response.json();
         if (data.exists) {
-            print(data, 'これはすくなめのやつ')
-            console.log(data, 'yeahhh')
             // データが存在する場合、フォームのフィールドを更新
             document.getElementById('sets').value = data.sets || '';
             document.getElementById('customers').value = data.customers || '';
@@ -17,34 +36,58 @@ export async function fetchDataForDate(selectedDate) {
             document.getElementById('total_price').value = data.total_price || '';
             document.getElementById('cash_total').value = data.cash_total || '';
             document.getElementById('card_total').value = data.card_total || '';
+            document.getElementById('rakuten_pay').value = data.rakuten_pay || '';
+            document.getElementById('paypay').value = data.paypay || '';
             document.getElementById('usd_total').value = data.usd_total || '';
             document.getElementById('remarks').value = data.remarks || '';
             // 他の必要なフィールドも同様に更新
         } else {
-            // データが存在しない場合の処理（例：フォームをクリア）
+
+
+            // データが存在しない場合の処理
             clearFormData();
-            alert('データがありません。');
+            console.log('hello, there si no data')
+            showBootstrapAlert('warning', 'データがありませんよ');
+
         }
     } catch (error) {
         console.error('Error:', error);
-        alert('データの取得に失敗しました。');
+        showBootstrapAlert('error', 'データの取得に失敗しました。');
     }
 }
 
+// グローバル変数として定義
+let holidays = {};
 
+// アプリケーションの初期化または適切なタイミングで祝日データをフェッチ
+async function initializeHolidays() {
+    try {
+        holidays = await fetchHolidays();
+    } catch (error) {
+        console.error('Failed to fetch holidays:', error);
+    }
+}
 
     // 日付変更時の処理を行う関数
+    //　ここでadd.htmlに遷移したとき、データがなければポップアップはく。
 export async function handleDateChange(event) {
+    // アラート領域をクリア
+    const alertPlaceholder = document.getElementById('alert-placeholder');
+    if (alertPlaceholder) {
+        alertPlaceholder.innerHTML = '';
+    } else {
+        print('ここだーーーーーーーーーーーーーーーーーーーー')
+    }
     const selectedDate = event.target.value;
     const date = new Date(selectedDate);
     const dayOfWeek = date.getDay();
 
     if (dayOfWeek === 0 || dayOfWeek === 6) {
-        alert('土、日は営業日ではありません。');
+        showBootstrapAlert('warning', '土、日は営業日ではありません。');
         clearFormData();
         setFormReadOnly(true);
     } else if (holidays[selectedDate]) {
-        alert('祝日なのでデータの追加ができません');
+        showBootstrapAlert('warning', '祝日なのでデータの追加ができません');
         clearFormData();
         setFormReadOnly(true);
     } else {
@@ -53,16 +96,17 @@ export async function handleDateChange(event) {
             const data = await fetch(`/fetch-data-for-date?date=${selectedDate}`).then(response => response.json());
             if (!data.exists) {
                 clearFormData();
-                alert('データがありません。');
+                showBootstrapAlert('warning', 'データがありません。');
             } else {
-                // データが存在する場合、フォームのフィールドを更新
-                document.getElementById('sets').value = data.sets || '';
-                document.getElementById('customers').value = data.customers || '';
-                // 他のフィールドも同様に更新...
+                // document.getElementById('sets').value = data.sets || '';
+                // document.getElementById('customers').value = data.customers || '';
+                await fetchDataForDate(selectedDate)
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('データの取得に失敗しました。');
+            showBootstrapAlert('error', 'データの取得に失敗しました。');
         }
     }
 }
+// 初期化関数を実行して祝日データをセット
+initializeHolidays();

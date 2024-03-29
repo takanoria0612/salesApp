@@ -1,0 +1,722 @@
+2024-03-01 11:13:42,218 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 11:13:42,218 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 11:13:47,526 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:13:47] "GET / HTTP/1.1" 200 -
+2024-03-01 11:13:47,538 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:13:47] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:20:32,050 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:20:32] "GET / HTTP/1.1" 200 -
+2024-03-01 11:20:32,063 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:20:32] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:21:20,636 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 11:21:20,637 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 11:21:24,303 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:21:24] "GET / HTTP/1.1" 200 -
+2024-03-01 11:21:24,316 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:21:24] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:21:38,879 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:21:38] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:21:38,903 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:21:38] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:21:55,623 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:21:55] "GET / HTTP/1.1" 200 -
+2024-03-01 11:21:55,644 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:21:55] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:21:59,500 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:21:59] "GET /filter?selectedMonth=2024-02 HTTP/1.1" 200 -
+2024-03-01 11:21:59,523 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:21:59] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:22:01,718 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:22:01] "GET /add HTTP/1.1" 200 -
+2024-03-01 11:22:01,739 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:22:01] "[36mGET /static/css/add.css HTTP/1.1[0m" 304 -
+2024-03-01 11:22:01,743 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:22:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-03-01 11:22:01,766 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:22:01] "[36mGET /static/js/initPage.js HTTP/1.1[0m" 304 -
+2024-03-01 11:22:01,767 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:22:01] "[36mGET /static/js/eventListeners.js HTTP/1.1[0m" 304 -
+2024-03-01 11:22:01,778 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:22:01] "[36mGET /static/js/holidays.js HTTP/1.1[0m" 304 -
+2024-03-01 11:22:01,780 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:22:01] "[36mGET /static/js/formUtils.js HTTP/1.1[0m" 304 -
+2024-03-01 11:22:01,780 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:22:01] "[36mGET /static/js/dateHandlers.js HTTP/1.1[0m" 304 -
+2024-03-01 11:22:01,831 - root - INFO -  2024-02-29 �̃f�[�^�͊��ɑ��݂��܂�
+2024-03-01 11:22:01,833 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:22:01] "POST /set-business-day HTTP/1.1" 200 -
+2024-03-01 11:22:53,541 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 11:22:53,541 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 11:24:49,695 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:24:49] "GET / HTTP/1.1" 200 -
+2024-03-01 11:24:49,717 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:24:49] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:24:52,853 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:24:52] "GET / HTTP/1.1" 200 -
+2024-03-01 11:24:52,865 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:24:52] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:26:18,004 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 11:26:18,005 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 11:26:21,048 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:26:21] "GET / HTTP/1.1" 200 -
+2024-03-01 11:26:21,061 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:26:21] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:26:32,975 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:26:32] "GET / HTTP/1.1" 200 -
+2024-03-01 11:26:32,987 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:26:32] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:26:39,387 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 11:26:39,387 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 11:26:42,716 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:26:42] "GET / HTTP/1.1" 200 -
+2024-03-01 11:26:42,729 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:26:42] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:27:32,304 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:27:32] "GET / HTTP/1.1" 200 -
+2024-03-01 11:27:32,316 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:27:32] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:27:33,819 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:27:33] "GET / HTTP/1.1" 200 -
+2024-03-01 11:27:33,834 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:27:33] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:27:35,241 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:27:35] "GET / HTTP/1.1" 200 -
+2024-03-01 11:27:35,253 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:27:35] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:27:37,938 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:27:37] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:27:37,960 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:27:37] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:28:50,857 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:28:50] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:28:50,871 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:28:50] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:28:57,125 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 11:28:57,125 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 11:29:00,242 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:29:00] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:29:00,255 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:29:00] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:29:09,636 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:29:09] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:29:09,649 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:29:09] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:29:16,959 - app.main - INFO - �{���܂ł̉c�Ɠ���0���ł��B�����_�ł̔���グ���ς͂O�~�ɂȂ�܂��B
+2024-03-01 11:29:16,961 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:29:16] "GET / HTTP/1.1" 200 -
+2024-03-01 11:29:16,984 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:29:16] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:29:20,074 - app.main - INFO - �{���܂ł̉c�Ɠ���0���ł��B�����_�ł̔���グ���ς͂O�~�ɂȂ�܂��B
+2024-03-01 11:29:20,074 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:29:20] "GET / HTTP/1.1" 200 -
+2024-03-01 11:29:20,087 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:29:20] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:31:30,666 - app.main - INFO - �{���܂ł̉c�Ɠ���0���ł��B�����_�ł̔���グ���ς͂O�~�ɂȂ�܂��B
+2024-03-01 11:31:30,666 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:31:30] "GET / HTTP/1.1" 200 -
+2024-03-01 11:31:30,679 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:31:30] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:31:39,955 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:31:39] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:31:39,976 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:31:39] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:33:30,087 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:33:30] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:33:30,100 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:33:30] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:33:35,042 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 11:33:35,043 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 11:33:37,158 - app.routes.data_management - INFO - 2024�N3���̕��ϔ����70.0�~�ł��B
+2024-03-01 11:33:37,164 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:33:37] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:33:37,178 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:33:37] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:34:42,920 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 11:34:42,920 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 11:34:45,372 - app.routes.data_management - INFO - 2024�N3���̉c�Ɠ�����1���ł��B���v�����70�~�ł��B���ϔ����70.0�~�ł��B
+2024-03-01 11:34:45,378 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:34:45] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:34:45,391 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:34:45] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:37:20,041 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 11:37:20,041 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 11:37:21,926 - app.routes.data_management - INFO - 2024�N3���̉c�Ɠ�����1���ł��B���v�����70�~�ł��B���ϔ����70.0�~�ł��B
+2024-03-01 11:37:21,932 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:37:21] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:37:21,945 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:37:21] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:48:20,353 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 11:48:20,353 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 11:48:22,803 - app.routes.data_management - INFO - 2024�N3���̉c�Ɠ�����1���ł��B���v�����70�~�ł��B���ϔ����70.0�~�ł��B
+2024-03-01 11:48:22,809 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:48:22] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:48:22,822 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:48:22] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:48:26,061 - app.routes.data_management - INFO - 2024�N3���̉c�Ɠ�����1���ł��B���v�����70�~�ł��B���ϔ����70.0�~�ł��B
+2024-03-01 11:48:26,062 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:48:26] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:48:26,075 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:48:26] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:49:32,906 - app.routes.data_management - INFO - 2024�N3���̉c�Ɠ�����1���ł��B���v�����70�~�ł��B���ϔ����70.0�~�ł��B
+2024-03-01 11:49:32,907 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:49:32] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:49:32,920 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:49:32] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:49:36,552 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 11:49:36,552 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 11:49:39,559 - app.routes.data_management - INFO - 2024�N3���̉c�Ɠ�����1���ł��B���v�����70�~�ł��B���ϔ����70.0�~�ł��B
+2024-03-01 11:49:39,564 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:49:39] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:49:39,578 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:49:39] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:50:07,460 - app.routes.data_management - INFO - 2024�N3���̉c�Ɠ�����1���ł��B���v�����70�~�ł��B���ϔ����70.0�~�ł��B
+2024-03-01 11:50:07,461 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:50:07] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:50:07,473 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:50:07] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:50:11,729 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 11:50:11,730 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 11:50:14,311 - app.routes.data_management - INFO - 2024�N3���̉c�Ɠ�����1���ł��B���v�����70�~�ł��B���ϔ����70.0�~�ł��B
+2024-03-01 11:50:14,317 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:50:14] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:50:14,330 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:50:14] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:52:13,883 - app.routes.data_management - INFO - 2024�N3���̉c�Ɠ�����1���ł��B���v�����70�~�ł��B���ϔ����70.0�~�ł��B
+2024-03-01 11:52:13,884 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:52:13] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:52:13,896 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:52:13] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 11:52:18,641 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 11:52:18,641 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 11:52:20,962 - app.routes.data_management - INFO - 2024�N3���̉c�Ɠ�����20���ł��B���v�����70�~�ł��B���ϔ����3.5�~�ł��B
+2024-03-01 11:52:20,967 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:52:20] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 11:52:20,980 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 11:52:20] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 12:00:01,307 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 12:00:01,307 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 12:00:04,411 - app.routes.data_management - INFO - 2024年3月の営業日数は20日です。合計売上は70円です。平均売上は3.5円です。
+2024-03-01 12:00:04,417 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:00:04] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 12:00:04,430 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:00:04] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 12:00:23,249 - app.routes.data_management - INFO - 2024年4月の営業日数は21日です。合計売上は0円です。平均売上は0.0円です。
+2024-03-01 12:00:23,250 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:00:23] "GET /filter?selectedMonth=2024-04 HTTP/1.1" 200 -
+2024-03-01 12:00:23,275 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:00:23] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 12:00:31,122 - app.routes.data_management - INFO - 2024年2月の営業日数は19日です。合計売上は665円です。平均売上は35.0円です。
+2024-03-01 12:00:31,122 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:00:31] "GET /filter?selectedMonth=2024-02 HTTP/1.1" 200 -
+2024-03-01 12:00:31,142 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:00:31] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 12:00:38,409 - app.routes.data_management - INFO - 2024年1月の営業日数は21日です。合計売上は735円です。平均売上は35.0円です。
+2024-03-01 12:00:38,410 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:00:38] "GET /filter?selectedMonth=2024-01 HTTP/1.1" 200 -
+2024-03-01 12:00:38,433 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:00:38] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 12:02:42,607 - app.routes.data_management - INFO - 2024年1月の営業日数は21日です。合計売上は735円です。平均売上は35.0円です。
+2024-03-01 12:02:42,608 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:02:42] "GET /filter?selectedMonth=2024-01 HTTP/1.1" 200 -
+2024-03-01 12:02:42,631 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:02:42] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 12:03:02,024 - app.routes.data_management - INFO - 2024年1月の営業日数は21日です。合計売上は735円です。平均売上は35.0円です。
+2024-03-01 12:03:02,025 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:03:02] "GET /filter?selectedMonth=2024-01 HTTP/1.1" 200 -
+2024-03-01 12:03:02,037 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:03:02] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 12:54:01,851 - app.routes.data_management - INFO - 2024年1月の営業日数は21日です。合計売上は735円です。平均売上は35.0円です。
+2024-03-01 12:54:01,852 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:54:01] "GET /filter?selectedMonth=2024-01 HTTP/1.1" 200 -
+2024-03-01 12:54:01,864 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 12:54:01] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 14:21:21,914 - app.routes.data_management - INFO - 2024年1月の営業日数は21日です。合計売上は735円です。平均売上は35.0円です。
+2024-03-01 14:21:21,916 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 14:21:21] "GET /filter?selectedMonth=2024-01 HTTP/1.1" 200 -
+2024-03-01 14:21:21,932 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 14:21:21] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 16:06:50,827 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 16:06:50,827 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:06:52,989 - app.main - INFO - 本日までの営業日は0日です。現時点での売り上げ平均は０円になります。
+2024-03-01 16:06:52,996 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:06:52] "GET / HTTP/1.1" 200 -
+2024-03-01 16:06:53,015 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:06:53] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 16:08:52,007 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 16:08:52,007 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:08:56,942 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は０円になります。
+2024-03-01 16:08:56,947 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:08:56] "GET / HTTP/1.1" 200 -
+2024-03-01 16:08:56,961 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:08:56] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 16:09:17,361 - app.routes.data_management - INFO - 2024年2月の営業日数は19日です。合計売上は665円です。平均売上は35.0円です。
+2024-03-01 16:09:17,362 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:09:17] "GET /filter?selectedMonth=2024-02 HTTP/1.1" 200 -
+2024-03-01 16:09:17,380 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:09:17] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 16:10:37,370 - app.routes.data_management - INFO - 2024年2月の営業日数は19日です。合計売上は665円です。平均売上は35.0円です。
+2024-03-01 16:10:37,370 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:10:37] "GET /filter?selectedMonth=2024-02 HTTP/1.1" 200 -
+2024-03-01 16:10:37,385 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:10:37] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 16:17:01,583 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 16:17:01,583 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:17:04,047 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 16:17:04,052 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:17:04] "GET / HTTP/1.1" 200 -
+2024-03-01 16:17:04,066 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:17:04] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 16:17:05,722 - app - ERROR - Exception on /auth/logout [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\auth.py", line 25, in logout
+    username = current_user.username  # 現在のユーザー名を取得
+               ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUserMixin' object has no attribute 'username'
+2024-03-01 16:17:05,724 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:17:05] "[35m[1mGET /auth/logout HTTP/1.1[0m" 500 -
+2024-03-01 16:18:03,172 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 16:18:03,172 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:18:06,300 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:18:06] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 16:18:06,310 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:18:06] "GET /auth/login?next=/ HTTP/1.1" 200 -
+2024-03-01 16:18:06,333 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:18:06] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2024-03-01 16:18:18,975 - app.routes.auth - INFO - ユーザー名 'onodera' ののログインに成功しました。
+2024-03-01 16:18:18,977 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:18:18] "[32mPOST /auth/login?next=/ HTTP/1.1[0m" 302 -
+2024-03-01 16:18:19,518 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 16:18:19,521 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:18:19] "GET / HTTP/1.1" 200 -
+2024-03-01 16:18:19,542 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:18:19] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 16:18:53,290 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 16:18:53,290 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:18:59,331 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 16:18:59,337 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:18:59] "GET / HTTP/1.1" 200 -
+2024-03-01 16:18:59,352 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:18:59] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 16:19:09,408 - app - ERROR - Exception on /auth/logout [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\auth.py", line 25, in logout
+    username = current_user.username  # 現在のユーザー名を取得
+               ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUserMixin' object has no attribute 'username'
+2024-03-01 16:19:09,411 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:19:09] "[35m[1mGET /auth/logout HTTP/1.1[0m" 500 -
+2024-03-01 16:22:34,129 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 16:22:34,130 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 16:22:36,431 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:22:36] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 16:22:36,447 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:22:36] "GET /auth/login?next=/ HTTP/1.1" 200 -
+2024-03-01 16:22:36,506 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:22:36] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2024-03-01 16:22:46,897 - app.routes.auth - INFO - ユーザー名 'onodera' のログインに成功しました。
+2024-03-01 16:22:46,898 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:22:46] "[32mPOST /auth/login?next=/ HTTP/1.1[0m" 302 -
+2024-03-01 16:22:47,454 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 16:22:47,458 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:22:47] "GET / HTTP/1.1" 200 -
+2024-03-01 16:22:47,478 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:22:47] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 16:22:50,128 - app.routes.auth - INFO - ユーザー 'onodera' がログアウトしました。
+2024-03-01 16:22:50,129 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:22:50] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+2024-03-01 16:22:50,133 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:22:50] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 16:22:50,138 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:22:50] "GET /auth/login?next=/ HTTP/1.1" 200 -
+2024-03-01 16:22:50,156 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 16:22:50] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2024-03-01 17:40:57,065 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 17:40:57,066 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:41:01,285 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:41:01] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 17:41:01,299 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:41:01] "GET /auth/login?next=/ HTTP/1.1" 200 -
+2024-03-01 17:41:01,338 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:41:01] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2024-03-01 17:41:01,370 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:41:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-03-01 17:41:18,236 - app.routes.auth - INFO - ユーザー名 'onodera' のログインに成功しました。
+2024-03-01 17:41:18,237 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:41:18] "[32mPOST /auth/login?next=/ HTTP/1.1[0m" 302 -
+2024-03-01 17:41:18,786 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 17:41:18,790 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:41:18] "GET / HTTP/1.1" 200 -
+2024-03-01 17:41:18,811 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:41:18] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 17:41:27,004 - app - ERROR - Exception on /filter [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\data_management.py", line 138, in filter_data
+    row_date = datetime.strptime(row[0], "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-03-01 17:41:27,006 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:41:27] "[35m[1mGET /filter?selectedMonth=2024-02 HTTP/1.1[0m" 500 -
+2024-03-01 17:41:47,330 - app - ERROR - Exception on /filter [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\data_management.py", line 138, in filter_data
+    row_date = datetime.strptime(row[0], "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-03-01 17:41:47,332 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:41:47] "[35m[1mGET /filter?selectedMonth=2024-02 HTTP/1.1[0m" 500 -
+2024-03-01 17:49:41,316 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 17:49:41,317 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:49:44,807 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:44] "GET /add HTTP/1.1" 200 -
+2024-03-01 17:49:44,822 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:44] "[36mGET /static/css/add.css HTTP/1.1[0m" 304 -
+2024-03-01 17:49:44,827 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-03-01 17:49:44,853 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:44] "[36mGET /static/js/initPage.js HTTP/1.1[0m" 304 -
+2024-03-01 17:49:44,854 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:44] "[36mGET /static/js/eventListeners.js HTTP/1.1[0m" 304 -
+2024-03-01 17:49:44,865 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:44] "GET /static/js/holidays.js HTTP/1.1" 200 -
+2024-03-01 17:49:44,868 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:44] "GET /static/js/dateHandlers.js HTTP/1.1" 200 -
+2024-03-01 17:49:44,868 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:44] "[36mGET /static/js/formUtils.js HTTP/1.1[0m" 304 -
+2024-03-01 17:49:44,951 - root - INFO - 2024-02-29のデータは存在しません。追加してください
+2024-03-01 17:49:44,952 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:44] "POST /set-business-day HTTP/1.1" 200 -
+2024-03-01 17:49:48,330 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:48] "GET /fetch-data-for-date?date=2024-02-21 HTTP/1.1" 200 -
+2024-03-01 17:49:48,358 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:48] "GET /fetch-data-for-date?date=2024-02-21 HTTP/1.1" 200 -
+2024-03-01 17:49:55,159 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:55] "GET /fetch-data-for-date?date=2024-02-14 HTTP/1.1" 200 -
+2024-03-01 17:49:55,177 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:55] "GET /fetch-data-for-date?date=2024-02-14 HTTP/1.1" 200 -
+2024-03-01 17:49:57,536 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:57] "GET /fetch-data-for-date?date=2024-02-06 HTTP/1.1" 200 -
+2024-03-01 17:49:59,612 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:59] "GET /fetch-data-for-date?date=2024-02-16 HTTP/1.1" 200 -
+2024-03-01 17:49:59,633 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:49:59] "GET /fetch-data-for-date?date=2024-02-16 HTTP/1.1" 200 -
+2024-03-01 17:50:16,635 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 17:50:16,638 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:16] "GET / HTTP/1.1" 200 -
+2024-03-01 17:50:16,653 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:16] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 17:50:19,258 - app - ERROR - Exception on /filter [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\data_management.py", line 138, in filter_data
+    row_date = datetime.strptime(row[0], "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-03-01 17:50:19,260 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:19] "[35m[1mGET /filter?selectedMonth=2024-02 HTTP/1.1[0m" 500 -
+2024-03-01 17:50:33,059 - app - ERROR - Exception on /filter [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\data_management.py", line 138, in filter_data
+    row_date = datetime.strptime(row[0], "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-03-01 17:50:33,060 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:33] "[35m[1mGET /filter?selectedMonth=2024-01 HTTP/1.1[0m" 500 -
+2024-03-01 17:50:39,143 - app - ERROR - Exception on /filter [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\data_management.py", line 138, in filter_data
+    row_date = datetime.strptime(row[0], "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-03-01 17:50:39,144 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:39] "[35m[1mGET /filter?selectedMonth=2024-04 HTTP/1.1[0m" 500 -
+2024-03-01 17:50:41,888 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:41] "GET /add HTTP/1.1" 200 -
+2024-03-01 17:50:41,902 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:41] "[36mGET /static/css/add.css HTTP/1.1[0m" 304 -
+2024-03-01 17:50:41,905 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-03-01 17:50:41,919 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:41] "[36mGET /static/js/initPage.js HTTP/1.1[0m" 304 -
+2024-03-01 17:50:41,921 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:41] "[36mGET /static/js/eventListeners.js HTTP/1.1[0m" 304 -
+2024-03-01 17:50:41,929 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:41] "[36mGET /static/js/holidays.js HTTP/1.1[0m" 304 -
+2024-03-01 17:50:41,931 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:41] "[36mGET /static/js/formUtils.js HTTP/1.1[0m" 304 -
+2024-03-01 17:50:41,932 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:41] "[36mGET /static/js/dateHandlers.js HTTP/1.1[0m" 304 -
+2024-03-01 17:50:41,982 - root - INFO - 2024-02-29のデータは存在しません。追加してください
+2024-03-01 17:50:41,983 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:41] "POST /set-business-day HTTP/1.1" 200 -
+2024-03-01 17:50:46,355 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:46] "GET /fetch-data-for-date?date=2024-02-26 HTTP/1.1" 200 -
+2024-03-01 17:50:46,372 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:50:46] "GET /fetch-data-for-date?date=2024-02-26 HTTP/1.1" 200 -
+2024-03-01 17:51:53,579 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 17:51:53,580 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 17:53:08,661 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:53:08] "GET /fetch-data-for-date?date=2024-02-15 HTTP/1.1" 200 -
+2024-03-01 17:53:08,679 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:53:08] "GET /fetch-data-for-date?date=2024-02-15 HTTP/1.1" 200 -
+2024-03-01 17:53:11,208 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:53:11] "GET /fetch-data-for-date?date=2024-02-07 HTTP/1.1" 200 -
+2024-03-01 17:53:11,227 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:53:11] "GET /fetch-data-for-date?date=2024-02-07 HTTP/1.1" 200 -
+2024-03-01 17:54:17,471 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:54:17] "GET /fetch-data-for-date?date=2024-02-08 HTTP/1.1" 200 -
+2024-03-01 17:54:17,483 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:54:17] "GET /fetch-data-for-date?date=2024-02-08 HTTP/1.1" 200 -
+2024-03-01 17:54:26,537 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:54:26] "GET /fetch-data-for-date?date=2024-02-09 HTTP/1.1" 200 -
+2024-03-01 17:54:26,549 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:54:26] "GET /fetch-data-for-date?date=2024-02-09 HTTP/1.1" 200 -
+2024-03-01 17:54:37,602 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 17:54:37,608 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:54:37] "GET / HTTP/1.1" 200 -
+2024-03-01 17:54:37,624 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:54:37] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 17:54:55,705 - app - ERROR - Exception on /filter [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\data_management.py", line 138, in filter_data
+    row_date = datetime.strptime(row[0], "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-03-01 17:54:55,708 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 17:54:55] "[35m[1mGET /filter?selectedMonth=2024-03 HTTP/1.1[0m" 500 -
+2024-03-01 18:02:42,596 - app - ERROR - Exception on /filter [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\data_management.py", line 138, in filter_data
+    row_date = datetime.strptime(row[0], "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-03-01 18:02:42,597 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:02:42] "[35m[1mGET /filter?selectedMonth=2024-03 HTTP/1.1[0m" 500 -
+2024-03-01 18:07:33,701 - app - ERROR - Exception on /filter [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\data_management.py", line 138, in filter_data
+    row_date = datetime.strptime(row[0], "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-03-01 18:07:33,702 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:33] "[35m[1mGET /filter?selectedMonth=2024-03 HTTP/1.1[0m" 500 -
+2024-03-01 18:07:38,284 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 18:07:38,284 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:07:44,473 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 18:07:44,479 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:44] "GET / HTTP/1.1" 200 -
+2024-03-01 18:07:44,493 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:44] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:07:45,140 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:45] "GET /add HTTP/1.1" 200 -
+2024-03-01 18:07:45,153 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:45] "[36mGET /static/css/add.css HTTP/1.1[0m" 304 -
+2024-03-01 18:07:45,161 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-03-01 18:07:45,169 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:45] "[36mGET /static/js/initPage.js HTTP/1.1[0m" 304 -
+2024-03-01 18:07:45,169 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:45] "[36mGET /static/js/eventListeners.js HTTP/1.1[0m" 304 -
+2024-03-01 18:07:45,177 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:45] "[36mGET /static/js/holidays.js HTTP/1.1[0m" 304 -
+2024-03-01 18:07:45,179 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:45] "[36mGET /static/js/formUtils.js HTTP/1.1[0m" 304 -
+2024-03-01 18:07:45,180 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:45] "[36mGET /static/js/dateHandlers.js HTTP/1.1[0m" 304 -
+2024-03-01 18:07:45,249 - root - INFO - 2024-02-29のデータは存在しません。追加してください
+2024-03-01 18:07:45,250 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:45] "POST /set-business-day HTTP/1.1" 200 -
+2024-03-01 18:07:48,554 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 18:07:48,555 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:48] "GET / HTTP/1.1" 200 -
+2024-03-01 18:07:48,572 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:48] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:07:52,168 - app - ERROR - Exception on /filter [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\data_management.py", line 138, in filter_data
+    row_date = datetime.strptime(row[0], "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-03-01 18:07:52,170 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:07:52] "[35m[1mGET /filter?selectedMonth=2024-02 HTTP/1.1[0m" 500 -
+2024-03-01 18:13:43,088 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 18:13:43,088 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:13:44,723 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:13:44] "[32mGET / HTTP/1.1[0m" 302 -
+2024-03-01 18:13:44,733 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:13:44] "GET /auth/login?next=/ HTTP/1.1" 200 -
+2024-03-01 18:13:44,779 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:13:44] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2024-03-01 18:13:59,230 - app.routes.auth - INFO - ユーザー名 'onodera' のログインに成功しました。
+2024-03-01 18:13:59,231 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:13:59] "[32mPOST /auth/login?next=/ HTTP/1.1[0m" 302 -
+2024-03-01 18:13:59,774 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 18:13:59,778 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:13:59] "GET / HTTP/1.1" 200 -
+2024-03-01 18:13:59,806 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:13:59] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:14:29,783 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 18:14:29,783 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:14:31,723 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 18:14:31,728 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:14:31] "GET / HTTP/1.1" 200 -
+2024-03-01 18:14:31,742 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:14:31] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:14:33,822 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 18:14:33,823 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:14:33] "GET / HTTP/1.1" 200 -
+2024-03-01 18:14:33,836 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:14:33] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:14:53,292 - app - ERROR - Exception on /filter [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\data_management.py", line 139, in filter_data
+    row_date = datetime.strptime(row[0], "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-03-01 18:14:53,294 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:14:53] "[35m[1mGET /filter?selectedMonth=2024-02 HTTP/1.1[0m" 500 -
+2024-03-01 18:19:48,776 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 18:19:48,777 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:19:52,041 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 18:19:52,047 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:19:52] "GET / HTTP/1.1" 200 -
+2024-03-01 18:19:52,064 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:19:52] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:19:54,902 - app - ERROR - Exception on /filter [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\data_management.py", line 139, in filter_data
+    row_date = datetime.strptime(row[0], "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-03-01 18:19:54,904 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:19:54] "[35m[1mGET /filter?selectedMonth=2024-01 HTTP/1.1[0m" 500 -
+2024-03-01 18:22:46,174 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:22:46] "GET /add HTTP/1.1" 200 -
+2024-03-01 18:22:46,191 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:22:46] "[36mGET /static/css/add.css HTTP/1.1[0m" 304 -
+2024-03-01 18:22:46,199 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:22:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-03-01 18:22:46,206 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:22:46] "[36mGET /static/js/eventListeners.js HTTP/1.1[0m" 304 -
+2024-03-01 18:22:46,207 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:22:46] "[36mGET /static/js/initPage.js HTTP/1.1[0m" 304 -
+2024-03-01 18:22:46,219 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:22:46] "[36mGET /static/js/dateHandlers.js HTTP/1.1[0m" 304 -
+2024-03-01 18:22:46,219 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:22:46] "[36mGET /static/js/holidays.js HTTP/1.1[0m" 304 -
+2024-03-01 18:22:46,221 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:22:46] "[36mGET /static/js/formUtils.js HTTP/1.1[0m" 304 -
+2024-03-01 18:22:46,412 - root - INFO - 2024-02-29のデータは存在しません。追加してください
+2024-03-01 18:22:46,412 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:22:46] "POST /set-business-day HTTP/1.1" 200 -
+2024-03-01 18:22:49,701 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:22:49] "GET /fetch-data-for-date?date=2024-02-15 HTTP/1.1" 200 -
+2024-03-01 18:22:49,830 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:22:49] "GET /fetch-data-for-date?date=2024-02-15 HTTP/1.1" 200 -
+2024-03-01 18:22:52,663 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:22:52] "GET /fetch-data-for-date?date=2024-02-28 HTTP/1.1" 200 -
+2024-03-01 18:22:56,012 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:22:56] "GET /fetch-data-for-date?date=2024-03-01 HTTP/1.1" 200 -
+2024-03-01 18:23:00,229 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:23:00] "GET /fetch-data-for-date?date=2024-03-06 HTTP/1.1" 200 -
+2024-03-01 18:23:02,053 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:23:02] "GET /fetch-data-for-date?date=2024-03-14 HTTP/1.1" 200 -
+2024-03-01 18:24:10,350 - app - ERROR - Exception on /filter [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\data_management.py", line 139, in filter_data
+    row_date = datetime.strptime(row[0], "%Y-%m-%d")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not None
+2024-03-01 18:24:10,352 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:24:10] "[35m[1mGET /filter?selectedMonth=2024-03 HTTP/1.1[0m" 500 -
+2024-03-01 18:26:26,250 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 18:26:26,250 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:26:26] "GET / HTTP/1.1" 200 -
+2024-03-01 18:26:26,267 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:26:26] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:26:30,188 - app - ERROR - Exception on /filter [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\improvedvenv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hiraki-Takanori\Documents\Flask_improved_excel_app\app\routes\data_management.py", line 139, in filter_data
+    else:
+          
+TypeError: strptime() argument 1 must be str, not None
+2024-03-01 18:26:30,189 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:26:30] "[35m[1mGET /filter?selectedMonth=2024-02 HTTP/1.1[0m" 500 -
+2024-03-01 18:27:13,005 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 18:27:13,006 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:27:15,267 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 18:27:15,272 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:27:15] "GET / HTTP/1.1" 200 -
+2024-03-01 18:27:15,288 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:27:15] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:27:19,430 - app.routes.data_management - INFO - 2024年2月の営業日数は19日です。合計売上は119575円です。平均売上は6293.4円です。
+2024-03-01 18:27:19,430 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:27:19] "GET /filter?selectedMonth=2024-02 HTTP/1.1" 200 -
+2024-03-01 18:27:19,450 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:27:19] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:27:23,340 - app.routes.data_management - INFO - 2024年4月の営業日数は21日です。合計売上は0円です。平均売上は0.0円です。
+2024-03-01 18:27:23,340 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:27:23] "GET /filter?selectedMonth=2024-04 HTTP/1.1" 200 -
+2024-03-01 18:27:23,360 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:27:23] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:27:26,555 - app.routes.data_management - INFO - 2024年3月の営業日数は20日です。合計売上は0円です。平均売上は0.0円です。
+2024-03-01 18:27:26,556 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:27:26] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-01 18:27:26,576 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:27:26] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:27:29,282 - app.routes.data_management - INFO - 2024年2月の営業日数は19日です。合計売上は119575円です。平均売上は6293.4円です。
+2024-03-01 18:27:29,283 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:27:29] "GET /filter?selectedMonth=2024-02 HTTP/1.1" 200 -
+2024-03-01 18:27:29,302 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:27:29] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:28:00,423 - app.routes.data_management - INFO - 2024年1月の営業日数は21日です。合計売上は0円です。平均売上は0.0円です。
+2024-03-01 18:28:00,424 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:28:00] "GET /filter?selectedMonth=2024-01 HTTP/1.1" 200 -
+2024-03-01 18:28:00,443 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:28:00] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:28:03,955 - app.routes.data_management - INFO - 2024年2月の営業日数は19日です。合計売上は119575円です。平均売上は6293.4円です。
+2024-03-01 18:28:03,956 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:28:03] "GET /filter?selectedMonth=2024-02 HTTP/1.1" 200 -
+2024-03-01 18:28:03,974 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:28:03] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:28:14,147 - app.routes.data_management - INFO - 2024年2月の営業日数は19日です。合計売上は119575円です。平均売上は6293.4円です。
+2024-03-01 18:28:14,148 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:28:14] "GET /filter?selectedMonth=2024-02 HTTP/1.1" 200 -
+2024-03-01 18:28:14,162 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:28:14] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:28:16,021 - app.main - INFO - 今月の本日以前の営業日数は0日です。現時点での売り上げ平均は0円になります。
+2024-03-01 18:28:16,021 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:28:16] "GET / HTTP/1.1" 200 -
+2024-03-01 18:28:16,038 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:28:16] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:43:00,409 - app.routes.data_management - INFO - 2024年2月の営業日数は19日です。合計売上は119575円です。平均売上は6293.4円です。
+2024-03-01 18:43:00,410 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:43:00] "GET /filter?selectedMonth=2024-02 HTTP/1.1" 200 -
+2024-03-01 18:43:00,434 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:43:00] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-01 18:44:00,709 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 18:44:00,710 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-01 18:44:04,234 - app.routes.data_management - INFO - 2024年2月の営業日数は19日です。合計売上は119575円です。平均売上は6293.4円です。
+2024-03-01 18:44:04,240 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:44:04] "GET /filter?selectedMonth=2024-02 HTTP/1.1" 200 -
+2024-03-01 18:44:04,254 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2024 18:44:04] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-29 11:29:31,568 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-29 11:29:31,568 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-03-29 11:29:42,457 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2024 11:29:42] "GET / HTTP/1.1" 200 -
+2024-03-29 11:29:42,468 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2024 11:29:42] "GET /static/css/indexhtml.css HTTP/1.1" 200 -
+2024-03-29 11:29:46,529 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2024 11:29:46] "GET / HTTP/1.1" 200 -
+2024-03-29 11:29:46,538 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2024 11:29:46] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-29 11:29:53,640 - app.routes.data_management - INFO - 2024年3月の営業日数は20日です。合計売上は0円です。平均売上は0.0円です。
+2024-03-29 11:29:53,640 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2024 11:29:53] "GET /filter?selectedMonth=2024-03 HTTP/1.1" 200 -
+2024-03-29 11:29:53,655 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2024 11:29:53] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
+2024-03-29 11:29:56,760 - app.routes.data_management - INFO - 2024年2月の営業日数は19日です。合計売上は119575円です。平均売上は6293.4円です。
+2024-03-29 11:29:56,761 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2024 11:29:56] "GET /filter?selectedMonth=2024-02 HTTP/1.1" 200 -
+2024-03-29 11:29:56,777 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2024 11:29:56] "[36mGET /static/css/indexhtml.css HTTP/1.1[0m" 304 -
