@@ -13,6 +13,7 @@
     <div class="page-container">
         <h1>新しい売り上げを追加する</h1>
         <div id="alert-placeholder" style="display: flex; justify-content: center;"></div>
+
         <form action="/add" method="post" id="salesForm">
             <!-- 各フォームグループ -->
             <div class="form-group full-length">
@@ -43,6 +44,14 @@
             <div class="form-group short-input">
                 <label for="card_total">カード合計:</label>
                 <input type="number" id="card_total" name="card_total" required min="0" step="1" value="{{ form_data['card_total'][0] if form_data.get('card_total') }}">
+            </div>
+            <div class="form-group short-input">
+                <label for="rakuten_pay">楽天pay:</label>
+                <input type="number" id="rakuten_pay" name="rakuten_pay" required min="0" step="1" value="{{ form_data['rakuten_pay'][0] if form_data.get('rakuten_pay') }}">
+            </div>
+            <div class="form-group short-input">
+                <label for="paypay">paypay:</label>
+                <input type="number" id="paypay" name="paypay" required min="0" step="1" value="{{ form_data['paypay'][0] if form_data.get('paypay') }}">
             </div>
             <div class="form-group short-input">
                 <label for="usd_total">USD負担合計:</label>
@@ -79,7 +88,8 @@
             {% endfor %}
         {% endif %}
         {% endwith %}
-    </div>
-</body>
 
+    </div>
+
+</body>
 </html>

@@ -1,14 +1,18 @@
+# app/routes/data_management.
+import logging
 from flask import Blueprint, render_template, request, flash, redirect, url_for, jsonify, current_app
 from flask_login import login_required
 import openpyxl
 import os
 from datetime import datetime, timedelta
 from app.models import ExcelDataRow
+from app.routes.business_day import calculate_business_days_for_filter, fetch_public_holidays
 from app.utils.excel_utils import find_data_by_date, open_excel_file, save_data
 from app.utils.email_utils import send_email_with_form_data
+# from app.utils.validators import validate_date, validate_positive_or_zero, validate_sets_greater_than_customers, validate_total_amounts
 
 
-
+logger = logging.getLogger(__name__)
 data_management_bp = Blueprint('data_management', __name__)
 
 @data_management_bp.route('/add', methods=['GET', 'POST'])
@@ -25,10 +29,11 @@ def add():
         'customers': '',
         'bowls': '',
         'purchase_total': '',
-        'total_price': '',
         'cash_total': '',
-        'card_total': '',
+        'rakuten_pay': '',
+        'paypay': '',
         'usd_total': '',
+        'total_price': '',
         'remarks': '',
     }
     if request.method == 'GET':
@@ -40,6 +45,7 @@ def add():
 
     elif request.method == 'POST':
         form_data = request.form.to_dict(flat=True)  # Use flat=True to get a regular dict
+
         try:
             row_data = ExcelDataRow.from_dict(form_data)
         except ValueError as e:
@@ -122,7 +128,11 @@ def filter_data():
     filtered_data = []
     total_purchase = 0.0
 
+    
+
     for row in sheet.iter_rows(min_row=2, values_only=True):
+        if row[0] is None:
+            continue
         if isinstance(row[0], datetime):
             row_date = row[0]
         else:
@@ -132,7 +142,7 @@ def filter_data():
                 continue
 
         if row_date.year == year and row_date.month == month:
-            total_sales = float(row[8]) if row[8] else 0
+            total_sales = float(row[10]) if row[10] else 0
             customer_count = int(row[2]) if row[2] else 0
             purchase_amount = float(row[4]) if row[4] else 0
             total_purchase += purchase_amount
@@ -141,6 +151,15 @@ def filter_data():
             filtered_data.append(row_data_with_avg_spend)
 
     total_purchase = int(total_purchase)
-    total_price = sum(row[8] for row in filtered_data if row[8])
+    total_price = sum(row[10] for row in filtered_data if row[10])
 
-    return render_template('index.html', file_exists=True, data=filtered_data, total_price=total_price, total_purchase=total_purchase, selected_month=selected_month)
+    # 営業日数を計算するための公休日の取得と営業日数の計算
+    public_holidays = fetch_public_holidays(year)
+    business_days = calculate_business_days_for_filter(year, month, public_holidays)
+
+    # 売上平均の計算
+    sales_average = round(total_price / business_days, 1) if business_days > 0 else 0.0
+    #　その月の営業日数、合計値段、平均売上をログ出力する
+    logger.info(f"{year}年{month}月の営業日数は{business_days}日です。合計売上は{total_price}円です。平均売上は{sales_average}円です。")
+    return render_template('index.html', file_exists=True, data=filtered_data, total_price=total_price, total_purchase=total_purchase, selected_month=selected_month, sales_average=sales_average)
+

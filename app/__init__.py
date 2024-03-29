@@ -1,9 +1,12 @@
 from flask import Flask
 from flask_login import LoginManager
+from app.logger import setup_logging
 from config import Config
 from dotenv import load_dotenv
 from app.models import User
 
+# ロギングの設定を初期化
+setup_logging()
 # Flask-Loginの設定
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'

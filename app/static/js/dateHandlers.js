@@ -28,8 +28,6 @@ export async function fetchDataForDate(selectedDate) {
         }
         const data = await response.json();
         if (data.exists) {
-
-            console.log(data, 'yeahhh')
             // データが存在する場合、フォームのフィールドを更新
             document.getElementById('sets').value = data.sets || '';
             document.getElementById('customers').value = data.customers || '';
@@ -38,6 +36,8 @@ export async function fetchDataForDate(selectedDate) {
             document.getElementById('total_price').value = data.total_price || '';
             document.getElementById('cash_total').value = data.cash_total || '';
             document.getElementById('card_total').value = data.card_total || '';
+            document.getElementById('rakuten_pay').value = data.rakuten_pay || '';
+            document.getElementById('paypay').value = data.paypay || '';
             document.getElementById('usd_total').value = data.usd_total || '';
             document.getElementById('remarks').value = data.remarks || '';
             // 他の必要なフィールドも同様に更新
@@ -101,7 +101,6 @@ export async function handleDateChange(event) {
                 // document.getElementById('sets').value = data.sets || '';
                 // document.getElementById('customers').value = data.customers || '';
                 await fetchDataForDate(selectedDate)
-                console.log('hahaha, int h else')
             }
         } catch (error) {
             console.error('Error:', error);
